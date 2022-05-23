@@ -5,8 +5,7 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Latest news in the US</h1>
     <div class="py-5">
         <div class="container">
             <div class="row hidden-md-up">
@@ -18,7 +17,7 @@
                         <div class="card-body">
                             <h5 class="card-title">@Url.Content(Model.GetNews.articles[i].title)</h5>
                             <p class="card-text">@Url.Content(Model.GetNews.articles[i].description)</p>
-                            <a href="@Url.Content(Model.GetNews.articles[i].url)" class="btn btn-primary">Go</a>
+                            <a href="@Url.Content(Model.GetNews.articles[i].url)" class="btn btn-primary">Go to article</a>
                         </div>
                     </div>
                 </div>
